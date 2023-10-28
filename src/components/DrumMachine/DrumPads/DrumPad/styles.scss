@@ -1,0 +1,25 @@
+@import "../styles.scss";
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(($pads-width - $pads-gap * 2) / 3);
+  height: calc(($pads-width - $pads-gap * 2) / 3);
+  background-color: hsl(155, 77%, 43%);
+  border-radius: 0.5rem;
+
+  &[is-clicked="true"],
+  &:hover,
+  &:active {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+  &[is-clicked="true"] {
+    background-color: hsl(267, 72%, 63%);
+    filter: none;
+  }
+}

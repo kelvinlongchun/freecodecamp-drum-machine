@@ -1,0 +1,12 @@
+$pads-width: 100%;
+$pads-gap: 1rem;
+
+.drum-pads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $pads-gap;
+  width: $pads-width;
+  max-width: 70vw;
+  height: $pads-width;
+  aspect-ratio: 1 / 1;
+}
